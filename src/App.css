@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap');
+
+:root {
+  --DarkBlue: hsl(209, 23%, 22%);
+  --VeryDarkBlue1: hsl(207, 26%, 17%);
+  --VeryDarkBlue2: hsl(200, 15%, 8%);
+  --DarkGray: hsl(0, 0%, 52%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Nunito', sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h4,
+h3,
+h5 {
+  font-size: 14px !important;
+  font-weight: bold !important;
 }
 
-.App-link {
-  color: #61dafb;
+h2,
+h1 {
+  font-size: 18px !important;
+  font-weight: bold !important;
+} 
+span{
+  font-weight: lighter !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.countries_img img{
+  width: 260px !important;
+  height: 150px !important;
+  object-fit: cover;
+}
+.country_img img{
+  width: 400px !important;
+  height: 300px !important;
+}
+/* header */
+header {
+  background-color: var(--DarkBlue) !important;
+  color: var(--White) !important;
+}
+
+header p {
+  cursor: pointer;
+}
+
+header .light_theme{
+  background-color: var(--White) !important;
+  color: var(--VeryDarkBlue2) !important;
+}
+/* Allcountries */
+.container_countries{
+  background-color: var(--VeryDarkBlue1) !important;
+  color: var(--White) !important;
+}
+/* button */
+
+.back{
+  background-color: var(--DarkBlue) !important;
+    color: var(--White) !important;
+}
+/* card */
+.countriesInfo{
+  background-color: var(--DarkBlue) !important;
+}
+/* singlecountry */
+.singlecountry{
+  background-color: var(--VeryDarkBlue1) !important;
+  color: var(--White) !important;
+  height: 100vh ;
+}
+input[type=text] {
+  border: none;
+  outline: none;
+  padding: 8px 40px 8px 20px;
+  width: 300px;
+  color: var(--White) !important;
+  background-color: var(--DarkBlue) !important;
+}
+
+select {
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: var(--White) !important;
+  background-color: var(--DarkBlue) !important;
 }
